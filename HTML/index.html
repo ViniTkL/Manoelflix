@@ -4,54 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITE TESTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../Assets/css/styles.css">
 </head>
 <body>
+    <aside class="menu"> 
+        <div class="menu-content general-content">
+            <h1 class="menu-logo"><a href="http://127.0.0.1:5500/HTML/index.html"><img src="../Assets/Imgs/manoelflix-high-resolution-logo-transparent.png"></a></h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">vídeos</a></li>
+                    <li><a href="#">musicas</a></li>
+                    <li><a href="#">sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    
+    <div class="space-between"></div>
 
-    <header id="heading"> 
-        <div class="div-manoelflix">
-            <h1 class="h1"> <a href="http://127.0.0.1:5500/HTML/index.html">MANOELFLIX</a> </h1>
-
-             <a href="https://www.youtube.com/watch?v=_KaA8W_Hov8" target="_blank" class="la-ele">LÁ ELE<button class="btn-la-ele" onclick="document.getElementById('audio-musica').play()"></button> </a> 
+    <section class=" section background-main">
+        <div class="video-main general-content"> 
+            <div class="video-content"> 
+                <h2>Título do Vídeo</h2>
+                <video poster="../Assets/Imgs/manoel-gomes-empresarios-do-dono-do-hit-caneta-azul-brigam-por-suposto-desvio-de-r-1-milhao-1685585078687_v2_300x225.png"></video>
+            </div>
+            <div class="video-content">  
+                <h2>Título do Vídeo</h2>
+                <video poster="../Assets/Imgs/manoel-gomes-empresarios-do-dono-do-hit-caneta-azul-brigam-por-suposto-desvio-de-r-1-milhao-1685585078687_v2_300x225.png"></video>
+            </div>
         </div>
 
-        <div class="menu">
-            <aside>
-                <nav class="menu-nav">
-                    <ul class="menu-lista">
-                        <li><a href="#videos">Videos</a></li>
-                        <li><a href="#musica">Músicas</a></li>
-                        <li><a href="#memes">Memes</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
+    </section>
 
-    </header>
-    <audio src="/Assets/Audio/manoel-gomes.mp3" preload="auto" id="audio-musica"></audio> 
-   
+
+
+
+
+    <section class="general-content section">
+        <div class="video-main general-content">
+            <div> 
+            <h2>Título do Vídeo</h2>
+            <video></video>
+            </div>
+
+            <div> 
+                <h2>Título do Vídeo</h2>
+                <video></video>
+            </div>
+            
+         </div>
+
+    </section>
     
-
-    <section class="secao-video" id="videos">
-        <article class="video">
-            <h2>Titulo do video</h2> <br>
-            colocar arquivo .mp4
-            <video src="https://www.youtube.com/watch?v=YBGAVF6NubQ" poster="../Assets/Imgs/manoel-gomes-empresarios-do-dono-do-hit-caneta-azul-brigam-por-suposto-desvio-de-r-1-milhao-1685585078687_v2_300x225.png" preload="auto"></video>
-         </article>    
-    </section>
-
-    <section class="secao-musics" id="musica">
-
-    </section>
-
-    
-    <section class="secao-memes" id="memes">
-
-    </section>
-
-
-    <footer id="footer-pg">
-        DESEMPREGO BATEU FORTE
-    </footer>
 </body>
 </html>
