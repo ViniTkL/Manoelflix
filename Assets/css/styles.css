@@ -43,6 +43,13 @@ h4{
     background-position: center center;
     background-size: cover;
     width: 100%;
+    color: var(--branco);
+
+}
+
+.white-bg{
+    background-color: var(--branco);
+    color: var(--cor-principal);
 }
 
 a{
@@ -56,7 +63,7 @@ a{
 }
 
 .section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .menu{
@@ -128,14 +135,27 @@ a{
 }
 
 .video-main{
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    top: 8rem;
+}
+
+.video-content{
+    position: relative;
+    left: 12rem;
+    
 }
 
 .video-content h2{
     text-transform: uppercase;
     font-size: 4rem;
-    color: var(--branco);
+    text-align: justify;
+}
+
+.video-content video{
+    width: 45rem;
+    height: 32rem;
 }
 
