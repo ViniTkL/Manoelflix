@@ -58,29 +58,45 @@ a{
 
 .aviso{
     position: fixed;
-    margin-left: 30rem;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.99);
+    margin-left: 22rem;
     top: 15rem;
+    width: 75%;
+    z-index: 1;
 }
 
 .aviso-content{
     display: flex;
+    position: relative;
     flex-flow: column wrap ;
     min-height: 75vh;
+
     justify-content: center;
     align-items: center;
-    width: 120rem;
+    background-color: rgba(255, 255, 255, 0.99);
+
 }
 
 .aviso-texto p{
+    margin-top: 1.3rem;
     font-size: 1.6rem;
 }
 
 .aviso-btn{
-    position: relative;
-    top: 30rem;
-    left: 58rem;
+    margin-top: 12rem;
+    width: 5%;
+    height: 2.5rem;
+    transition: all 200ms ease-in-out;
+    background: none;
+    cursor: pointer;
+    color: var(--cor-principal);
+    border: 0.1rem solid var(--cor-principal);
+}
+
+.aviso-btn:hover{
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    border: 0.1rem solid var(--branco);
+
 }
 
 .general-content{
@@ -102,7 +118,7 @@ a{
     right: 0;
     width: 100%;
     border-bottom: 0.1rem solid var(--cor-secundaria);
-    z-index: 2;
+    z-index: 1;
 }
 
 .menu-content{
@@ -197,11 +213,27 @@ a{
 
 .white-bg video:hover{
     border: 0.1rem solid var(--cor-principal);
-    max-width: 110%;
+    max-width: 105%;
 }
 
 .white-bg video:fullscreen{
     border: none;
+}
+
+.link-videos{
+    margin-top: 0.5rem;
+    color: var(--branco);   
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: none;
+}
+
+.link-videos:hover{
+    text-decoration: underline;
+}
+
+.white-bg .link-videos{
+    color: var(--cor-principal);
 }
 
 .sobre-content{
@@ -229,3 +261,41 @@ a{
     border-radius: 1.2rem;
     border: 0.3rem solid var(--branco);
 }
+
+
+.footer{
+    height: 4rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.footer-imgs img{
+   padding: 1rem;
+   transition: all 300ms ease-in-out;
+}
+
+.footer-imgs img:hover{
+    transform: rotate(-5deg);
+    width: 4.6rem;
+    height: 4.6rem;
+ }
+
+.footer-texto p{
+    font-size: 1.6rem;
+    font-family: 'Lekton', sans-serif;
+}
+
+
+
+
+
+
+
+
+
